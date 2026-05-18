@@ -1,0 +1,25 @@
+[project]
+name = "tenders-agent"
+version = "0.1.0"
+description = "Tenders Agent for the QueryTenders Platform"
+authors = [
+    { name = "Gerardo Salazar", email = "gfsalazar01@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "asyncpg>=0.31.0",
+    "fastapi>=0.136.1",
+    "google-adk>=1.33.0",
+    "greenlet>=3.5.0",
+    "mcp-clickhouse>=0.3.0",
+    "pydantic-settings>=2.14.1",
+    "python-dotenv>=1.2.2",
+    "uvicorn[standard]>=0.46.0",
+]
+
+[project.scripts]
+tenders-agent = "tenders_agent.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
