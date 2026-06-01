@@ -1,6 +1,8 @@
 # tenders-agent
 Tenders Agent for the QueryTenders Platform
 
+![Tenders Agent Architecture](assets/tenders-agent-arch.png)
+
 ## Development
 
 Run the API locally:
